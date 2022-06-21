@@ -2,7 +2,7 @@ import client
 from threading import Thread
 
 
-cm = client.client("cn-sx-bgp-2.natfrp.cloud", 24010)
+cm = client.client("localhost", 2401)
 
-while True:
-    print(cm.recvStr(3))
+print(cm.recvStr())
+cm.sendMsg("123")

@@ -1,3 +1,5 @@
 /.idea
 /.vscode
 /_pycache_
+/CLIENT/_pycache_
+/SERVER/_pycache_

@@ -15,5 +15,11 @@ class server:
         clientSocket, address = self.s.accept()
         clientSocket.send(msg.encode("utf-8"))
 #        s.shutdown()
+    def recvMsg(self):
+        try:
+            RECV = self.s.recv(1024)
+        except:
+            pass
+
 
 
